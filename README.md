@@ -6,7 +6,7 @@ ComfyUI custom node that runs multiple regexes against the starting string.
 
 1. Clone this repository into your ComfyUI `custom_nodes` folder:
    ```bash
-   git clone https://github.com/anomalyco/ComfyUI-Replace-Text-Bulk-Regex.git
+   git clone https://github.com/roybeast/ComfyUI-Replace-Text-Bulk-Regex.git
    ```
 2. Restart ComfyUI.
 
