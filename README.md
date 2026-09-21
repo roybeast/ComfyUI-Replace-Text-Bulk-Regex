@@ -2,14 +2,28 @@
 
 ComfyUI custom node that runs multiple regexes against the starting string.
 
+## Installation
+
+1. Clone this repository into your ComfyUI `custom_nodes` folder:
+   ```bash
+   git clone https://github.com/anomalyco/ComfyUI-Replace-Text-Bulk-Regex.git
+   ```
+2. Restart ComfyUI.
+
+The node should now appear in the `utils` category.
+
 ## Inputs
 
-* `string`: starting string
-* `regex_patterns_and_replacements`: multiline string containing regex patterns and replacements
-* `case_insensitive`: default `true`
-* `multiline`: default `false`
-* `dotall`: default `false`
-* `count`: default `0` (0 means replace all occurrences)
+* `string`: The starting text to apply regex replacements to.
+* `regex_patterns_and_replacements`: A multiline string containing regex patterns and their corresponding replacements, formatted as `pattern,replacement` per line.
+* `case_insensitive`: If `true`, matching is case-insensitive.
+* `multiline`: If `true`, allows `^` and `$` to match the start and end of each line.
+* `dotall`: If `true`, allows the dot `.` character to match newlines.
+* `count`: The maximum number of replacements to perform for each pattern. Set to `0` to replace all occurrences.
+
+## Outputs
+
+* `output_string`: The final text after all regex patterns have been applied.
 
 ## Usage
 
